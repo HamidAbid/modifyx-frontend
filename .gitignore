@@ -1,0 +1,4 @@
+node_modules
+.env
+blog.json
+product.json
