@@ -17,7 +17,7 @@ export default function UserChat() {
     const fetchMessages = async () => {
       try {
         const { data } = await axios.get(
-          `${process.env.VITE_API_BASE_URL}/api/chat/admin/chat/messages/${user._id}`
+          `/api/chat/admin/chat/messages/${user._id}`
         );
         setChat(data);
       } catch (err) {
