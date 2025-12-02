@@ -7,11 +7,11 @@ import { toast } from "react-toastify";
 
 // Car Brands (UNCHANGED)
 const carBrands = [
-  { id: "toyota", name: "Toyota", image: "../img/cars/toyota.png" },
-  { id: "honda", name: "Honda", image: "../img/cars/honda.jpeg" },
-  { id: "bmw", name: "BMW", image: "../img/cars/bmw.webp" },
-  { id: "audi", name: "Audi", image: "../img/cars/audi.avif" },
-  { id: "nissan", name: "Nissan", image: "../img/cars/nissan.jpeg" },
+  { id: "toyota", name: "Toyota", image: "https://res.cloudinary.com/dbkyvye1k/image/upload/v1764677284/toyota_gfwmb4.png" },
+  { id: "honda", name: "Honda", image: "https://res.cloudinary.com/dbkyvye1k/image/upload/v1764677273/honda_f6zzni.jpg" },
+  { id: "bmw", name: "BMW", image: "https://res.cloudinary.com/dbkyvye1k/image/upload/v1764677231/bmw_vga1r4.webp" },
+  { id: "audi", name: "Audi", image: "https://res.cloudinary.com/dbkyvye1k/image/upload/v1764677225/audi_pd4ptf.avif" },
+  { id: "nissan", name: "Nissan", image: "https://res.cloudinary.com/dbkyvye1k/image/upload/v1764677274/nissan_oxqsz1.jpg" },
 ];
 
 // Cars per brand (UNCHANGED)

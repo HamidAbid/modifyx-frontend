@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useAuth } from "../context/authContext";
-import loginRegister from "../../img/cars/loginRegister.jpg";
+
 const Register = () => {
   const [activeTab, setActiveTab] = useState("login");
   const [formData, setFormData] = useState({
@@ -188,7 +188,7 @@ const Register = () => {
           <div className="md:shrink-0 hidden md:block">
             <img
               className="h-full w-96 object-cover"
-              src={loginRegister}
+              src='https://res.cloudinary.com/dbkyvye1k/image/upload/v1764677274/loginRegister_wqtjpl.jpg'
               alt="Flowers"
             />
           </div>

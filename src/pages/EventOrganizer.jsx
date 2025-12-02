@@ -11,7 +11,7 @@ const carModsData = [
     description:
       "Transform your car’s look with a full custom body kit, including bumpers, side skirts, and diffusers.",
     image:
-      "../../img/cars/bodykit.jpg",
+      "https://res.cloudinary.com/dbkyvye1k/image/upload/v1764677231/bodykit_potrlx.jpg",
     price: "45,000 - 100,000",
     features: [
       "Front and rear bumpers",
@@ -26,7 +26,7 @@ const carModsData = [
     description:
       "Upgrade your car’s lighting with modern LED headlights, taillights, and ambient interior glow.",
     image:
-      "../../img/cars/carlight.jpg",
+      "https://res.cloudinary.com/dbkyvye1k/image/upload/v1764677232/carlight_bizjnu.jpg",
     price: "18,000 - 80,000",
     features: [
       "LED headlights",
@@ -105,7 +105,7 @@ const EventOrganizer = () => {
   return (
     <div className="bg-slate-950 text-white min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-cover bg-center py-52 bg-[url('../../img/cars/packagehero.jpg')]
+      <section className="relative bg-cover bg-center py-52 bg-[url('https://res.cloudinary.com/dbkyvye1k/image/upload/v1764677275/packagehero_wuby25.jpg')]
 " >
         <div className="absolute inset-0 bg-black/40  blur-3xl"></div>
         <div className="relative max-w-7xl mx-auto px-4 text-center">
