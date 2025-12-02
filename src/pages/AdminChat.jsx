@@ -3,7 +3,7 @@ import axios from "axios";
 import io from "socket.io-client";
 import { motion } from "framer-motion";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://modifyx-backend-1.onrender.com");
 
 const AdminChat = ({ darkMode }) => {
   const [users, setUsers] = useState([]);

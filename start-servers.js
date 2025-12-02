@@ -20,7 +20,3 @@ process.on('SIGINT', () => {
   process.exit();
 });
 
-console.log('Both servers are running!');
-console.log('Frontend: http://localhost:5173');
-console.log('Backend: http://localhost:5000');
-console.log('Press Ctrl+C to stop both servers.'); 

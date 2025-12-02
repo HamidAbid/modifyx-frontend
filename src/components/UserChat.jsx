@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import axios from "axios";
 import { useAuth } from "../context/authContext";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://modifyx-backend-1.onrender.com");
 
 export default function UserChat() {
   const { user } = useAuth();
