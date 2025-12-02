@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import axios from "axios";
 import { useAuth } from "../context/authContext";
 
-const socket = io("https://modifyx-backend-1.onrender.com");
+const socket = io(process.env.VITE_API_BASE_URL);
 
 export default function UserChat() {
   const { user } = useAuth();
@@ -17,7 +17,7 @@ export default function UserChat() {
     const fetchMessages = async () => {
       try {
         const { data } = await axios.get(
-          `/api/chat/admin/chat/messages/${user._id}`
+          `${process.env.VITE_API_BASE_URL}/api/chat/admin/chat/messages/${user._id}`
         );
         setChat(data);
       } catch (err) {
@@ -76,11 +76,10 @@ export default function UserChat() {
         {chat.map((msg, i) => (
           <div
             key={i}
-            className={`px-3 py-2 rounded max-w-[75%] ${
-              msg.senderId === user._id
+            className={`px-3 py-2 rounded max-w-[75%] ${msg.senderId === user._id
                 ? "bg-slate-800 text-white ml-auto"
                 : "bg-slate-200 text-black mr-auto"
-            }`}
+              }`}
           >
             {msg.message}
             <div className="text-[10px] text-right">

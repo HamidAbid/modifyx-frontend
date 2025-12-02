@@ -3,7 +3,7 @@ import axios from "axios";
 import io from "socket.io-client";
 import { motion } from "framer-motion";
 
-const socket = io("https://modifyx-backend-1.onrender.com");
+const socket = io(process.env.VITE_API_BASE_URL);
 
 const AdminChat = ({ darkMode }) => {
   const [users, setUsers] = useState([]);
