@@ -145,7 +145,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-red-600 mb-4 uppercase">
               Our Specialties
             </h3>
-          <ul>
+          <ul className="text-gray-300">
               <li>Body Kits & Aero Mods</li>
               <li>Alloy Wheels & Tires</li>
               <li>Performance Upgrades</li>

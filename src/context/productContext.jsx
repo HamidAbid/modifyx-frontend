@@ -29,7 +29,7 @@ export const ProductProvider = ({ children }) => {
       setWishlist(data);
     } catch (error) {
       console.error("Error fetching wishlist:", error);
-      toast.error("Failed to load wishlist");
+      
     } finally {
       setLoadingWishlist(false);
     }

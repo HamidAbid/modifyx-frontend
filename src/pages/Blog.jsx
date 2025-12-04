@@ -61,7 +61,7 @@ const Blog = () => {
         </div>
 
         {/* Search & Filter */}
-        <div className="bg-[#111111] border border-gray-800 rounded-xl shadow-lg p-6 mb-10">
+        <div className="bg-[#111111] border border-gray-800 rounded-xl shadow-lg sm:p-6 p-2  mb-10">
           <div className="flex flex-col md:flex-row justify-between gap-4 items-center">
             {/* Search */}
             <div className="relative w-full md:w-96 h-11">
@@ -89,12 +89,12 @@ const Blog = () => {
             </div>
 
             {/* Category Buttons */}
-            <div className="flex overflow-x-auto hide-scrollbar gap-3 pb-2 md:pb-0">
+            <div className="flex overflow-x-auto flex-wrap  hide-scrollbar gap-1 sm:gap-3 pb-2 md:pb-0">
               {categories.map((category) => (
                 <button
                   key={category}
                   onClick={() => setSelectedCategory(category)}
-                  className={`px-4 py-2 text-sm font-medium whitespace-nowrap rounded-full transition-all duration-300 ${
+                  className={`px-4 py-2 text-xs sm:text-sm font-medium whitespace-nowrap rounded-full transition-all duration-300 ${
                     selectedCategory === category
                       ? "bg-red-600 text-white shadow-md shadow-red-700/30"
                       : "text-gray-400 hover:text-red-500 hover:bg-red-500/10"

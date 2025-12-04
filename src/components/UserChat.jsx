@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import axios from "axios";
 import { useAuth } from "../context/authContext";
 
-const socket = io(process.env.VITE_API_BASE_URL);
+const socket = io(`/api/`);
 
 export default function UserChat() {
   const { user } = useAuth();

@@ -71,7 +71,7 @@ function App() {
     <CartProvider>
       <ProductProvider>
       <div className="min-h-screen flex flex-col">
-        {!isAdminPage && <Navbar />}
+       <div className="h-16"> {!isAdminPage && <Navbar />}</div>
 
         <main className={`flex-grow ${isAdminPage ? "w-full" : ""}`}>
           {authError && !isAdminPage && (

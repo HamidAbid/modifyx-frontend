@@ -161,7 +161,7 @@ const formatLargeNumber = (num) => {
       });
   }, [currentPage]);
 
-  const handleAddProduct = () => {
+  const handleAddProduct = () => {  
     const formattedProduct = {
       ...newProduct,
       quantity: Number(newProduct.stock), // Note: you're using "stock", but your state uses "quantity"
@@ -2413,7 +2413,7 @@ const handleResetBookingStatus = async (booking) => {
 
   return (
     <div
-      className={`min-h-screen w-full ${
+      className={`min-h-screen -mt-16 w-full ${
         darkMode ? "bg-gray-900 text-white" : ""
       }`}
     >
